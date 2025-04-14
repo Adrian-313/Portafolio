@@ -73,7 +73,7 @@ body {
     cursor: pointer;
     color: white;
     margin-left: auto; 
-    z-index: 2000;  
+    z-index: 1100;  
     padding-right: 50px;
 }
 
