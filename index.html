@@ -1,74 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Aadrian Ordoñez</title>
-    <link rel="stylesheet" href="Css/Style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Adrian Ordoñez</title>
+    <link rel="stylesheet" href="Css/Style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
+
 <body>
     <header>
         <nav class="navigation">
-            <a href="#profile" class="nav-link">Inicio</a>
-            <a href="#projects" class="nav-link">Proyectos</a>
-            <a href="#contact" class="nav-link">Acerca de Mí</a>
-            <a href="Documentos/Cv_Kevin Ordoñez.pdf" class="cv-button" download>Descargar CV</a>
+            <div class="nav-container">
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <div class="nav-links" id="navLinks">
+                    <a href="#profile" class="nav-link">Inicio</a>
+                    <a href="#projects" class="nav-link">Proyectos</a>
+                    <a href="#contact" class="nav-link">Acerca de mí</a>
+                    <a href="Documentos/Cv_Kevin Ordoñez.pdf" class="cv-button" download>Descargar CV</a>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        
         <section id="profile" class="profile">
             <div class="profile-container">
                 <h1>Adrian Ordoñez</h1>
                 <p>Game Developer</p>
             </div>
-            
         </section>
 
         <section id="projects" class="section">
             <h2>Proyectos</h2>
             <div class="projects-grid">
 
-
                 <div class="project-card">
-                    <h3>Medieval Guard</h3> <!-- Nombre del proyecto SIEMPRE visible arriba -->
+                    <h3>Medieval Guard</h3>
                     <div class="project-image-container">
-                        <img src="Imagenes/MedievalGuard/MedievalGuard.webp" alt="Medieval Guard"> <!-- Imagen dentro del contenedor -->
+                        <img src="Imagenes/MedievalGuard/MedievalGuard.webp" alt="Medieval Guard" />
                         <div class="overlay">
-                            <p>Explora y enfréntate a hordas de esqueletos en este desafiante juego de acción. Derrota enemigos, recupera vida y 
-                                avanza entre salas mientras sobrevives a intensas oleadas. ¿Tienes lo necesario para salir con vida?</p>
+                            <p>Explora y enfréntate a hordas de esqueletos en este desafiante juego de acción. Derrota enemigos, recupera vida y avanza entre salas mientras sobrevives a intensas oleadas. ¿Tienes lo necesario para salir con vida?</p>
                             <a href="MedievalGuard.html" class="project-button">Ver más</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <h3>How scary is my ex</h3> <!-- Nombre del proyecto SIEMPRE visible arriba -->
+                    <h3>How Scary is My Ex</h3>
                     <div class="project-image-container">
-                        <img src="Imagenes/How scary is my ex/How Scary is my ex.png" alt="Pachink"> <!-- Imagen dentro del contenedor -->
+                        <img src="Imagenes/How scary is my ex/How Scary is my ex.png" alt="How scary is my ex" />
                         <div class="overlay">
-                            <p>HOW SCARY IS MY EX! es un juego de supervivencia y estrategia en tiempo real donde debes evitar ser atrapado por 
-                                tu ex en un mapa lleno de obstáculos. ¡Sobrevive el tiempo límite y escapa en esta divertida y tensa experiencia!</p>
+                            <p>HOW SCARY IS MY EX! es un juego de supervivencia y estrategia en tiempo real donde debes evitar ser atrapado por tu ex en un mapa lleno de obstáculos. ¡Sobrevive el tiempo límite y escapa en esta divertida y tensa experiencia!</p>
                             <a href="How_scary_is_my_ex.html" class="project-button">Ver más</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <h3>Corruptide</h3> <!-- Nombre del proyecto SIEMPRE visible arriba -->
+                    <h3>Corruptide</h3>
                     <div class="project-image-container">
-                        <img src="Imagenes/Corruptide/Corruptide.png" alt="Pachink"> <!-- Imagen dentro del contenedor -->
+                        <img src="Imagenes/Corruptide/Corruptide.png" alt="Corruptide" />
                         <div class="overlay">
-                            <p>Corruptide es un frenético shoot 'em up en 2.5D donde lideras una flota alienígena contra la resistencia humana.
-                                Defiende tu nave nodriza y conquista la Tierra. </p>
+                            <p>Corruptide es un frenético shoot 'em up en 2.5D donde lideras una flota alienígena contra la resistencia humana. Defiende tu nave nodriza y conquista la Tierra.</p>
                             <a href="Corruptide.html" class="project-button">Ver más</a>
                         </div>
                     </div>
                 </div>
 
+                <div class="project-card">
+                    <h3>Keep'em Away</h3>
+                    <div class="project-image-container">
+                        <img src="Imagenes/Keep'em away/cover_keep_em_up.png" alt="Keep'em Away" />
+                        <div class="overlay">
+                            <p>🐔 Keep'em Away es un juego de supervivencia donde deberás proteger tu huevo de oro de oleadas infinitas de gallinas. ¡Muévete, esquiva y resiste todo lo que puedas! 🥚🔥</p>
+                            <a href="Keep'em away.html" class="project-button">Ver más</a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </section>
@@ -76,17 +86,10 @@
         <section id="contact" class="section">
             <h2>Acerca de Mí</h2>
             <div class="acerca-de-mi">
-                <img src="Imagenes/Foto de perfil.jpg" alt="Imagen Adrian Ordoñez">
+                <img src="Imagenes/Foto de perfil.jpg" alt="Imagen Adrian Ordoñez" />
                 <p>
-                    Desarrollador de videojuegos especializado en Unity (2D y 3D) y C#, con sólida experiencia en implementación de mecánicas de 
-                    juego, sistemas de movimiento y detección de colisiones. Complemento mis habilidades técnicas con conocimientos en HTML, CSS,
-                    Git, GitHub e Ilustrador. <br>
-
-                    <br>Me destaco por mi capacidad de adaptación, responsabilidad y excelente comunicación en entornos de trabajo colaborativo por 
-                    ende mi pasión por los videojuegos y compromiso con la excelencia me permiten abordar cada proyecto con entusiasmo y 
-                    dedicación, buscando constantemente superar los estándares establecidos a través del aprendizaje continuo lo que me permite 
-                    aportar valor significativo a proyectos desafiantes, donde puedo aplicar y expandir mi conjunto de habilidades técnicas y 
-                    creativas
+                    Desarrollador de videojuegos especializado en Unity (2D y 3D) y C#, con sólida experiencia en implementación de mecánicas de juego, sistemas de movimiento y detección de colisiones. Complemento mis habilidades técnicas con conocimientos en HTML, CSS, Git, GitHub e Ilustrador. <br><br>
+                    Me destaco por mi capacidad de adaptación, responsabilidad y excelente comunicación en entornos colaborativos. Mi pasión por los videojuegos y compromiso con la excelencia me permiten abordar cada proyecto con entusiasmo y dedicación, buscando superar los estándares establecidos mediante el aprendizaje continuo. Esto me permite aportar valor significativo a proyectos desafiantes, donde aplico y expando mis habilidades técnicas y creativas.
                 </p>
             </div>
 
@@ -110,5 +113,13 @@
     <footer class="footer">
         <p>&copy; 2025 Adrian Ordoñez. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("navLinks");
+            nav.classList.toggle("active");
+        }
+    </script>
 </body>
+
 </html>

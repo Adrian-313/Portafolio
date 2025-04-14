@@ -11,10 +11,15 @@
 <body>
     <header>
         <nav class="navigation">
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="index.html#projects" class="nav-link">Proyectos</a>
-            <a href="index.html#contact" class="nav-link">Acerca de Mí</a>
-            <a href="Documentos/Cv_Kevin Ordoñez.pdf" class="cv-button" download>Descargar CV</a>
+            <div class="nav-container">
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="index.html#projects" class="nav-link">Proyectos</a>
+                    <a href="index.html#contact" class="nav-link">Acerca de mí</a>
+                    <a href="Documentos/Cv_Kevin Ordoñez.pdf" class="cv-button" download>Descargar CV</a>
+                </div>
+            </div>
         </nav>
     </header>
     
@@ -49,5 +54,11 @@
     <footer>
         <p>&copy; 2025 Corruptide. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("navLinks");
+            nav.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>

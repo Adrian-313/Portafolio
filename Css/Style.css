@@ -10,9 +10,6 @@ body {
 
 /* Navegación */
 .navigation {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
     background: rgba(0, 0, 0, 1);
     padding: 15px 0;
     position: fixed;
@@ -21,6 +18,22 @@ body {
     z-index: 1000;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    width: 100%;
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
 
 .nav-link {
     color: white;
@@ -28,7 +41,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     transition: transform 0.3s, color 0.3s;
-    padding: 6px 20px;
+    padding: 6px 10px;
 }
 
 .nav-link:hover {
@@ -52,6 +65,13 @@ body {
     transform: scale(1.1);
 }
 
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    z-index: 1100;
+}
 
 /* Perfil */
 .profile {
@@ -254,7 +274,53 @@ body {
         flex-direction: column;
         text-align: center;
     }
-    .cv-button {
-        margin-top: 10px;
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-container {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.95);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-link, .cv-button {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .acerca-de-mi {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .acerca-de-mi p {
+        font-size: 14px;
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    .profile h1 {
+        font-size: 32px;
+    }
+
+    .profile p {
+        font-size: 20px;
     }
 }
