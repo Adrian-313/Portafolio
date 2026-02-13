@@ -51,9 +51,9 @@ body {
 
 /* Imagen del juego */
 .medieval-guard-container img {
-    width: 18rem; /* Ajusta el tamaño de la imagen */
+    width: 18rem; 
     height: 18rem ;
-    border-radius: 12px; /* Bordes redondeados */
+    border-radius: 12px;
     object-fit: cover;
     box-shadow: 0 5px 20px rgba(0, 114, 255, 0.4);
 }

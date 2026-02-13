@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycle Race</title>
+    <link rel="stylesheet" href="Css/StyleProjects.css">
+    <link rel="stylesheet" href="Css/Style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="nav-container">
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="index.html#projects" class="nav-link">Proyectos</a>
+                    <a href="index.html#skills" class="nav-link">Habilidades</a>
+                    <a href="index.html#contact" class="nav-link">Acerca de mí</a>
+                    <a href="Documentos/Cv_Kevin Ordoñez.pdf" class="cv-button" download>Descargar CV</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="game-intro">
+            <h1 class="medieval-guard-title">Recycle Race</h1>
+            <div class="medieval-guard-container">
+                <img src="Imagenes/Recycle Race/Recycle Race Portada.png" alt="Recycle Race" class="game-image">
+                <p>
+                    Sumérgete en un entorno de realidad virtual con este juego para dispositivos móviles compatible con Google Cardboard. Tu misión es sencilla, pero llena de adrenalina: recoge botellas esparcidas por el parque y lánzalas al bote de reciclaje antes de que se acabe el tiempo. <br><br>
+                    En Recycle Race, debes recoger botellas distribuidas por el parque virtual y arrojarlas correctamente al bote de reciclaje. ¡Pero cuidado! El tiempo corre y cada segundo cuenta.
+                </p>
+            </div>
+            <p class="rol">Rol: Game programmer</p>
+        </section>
+
+        <section id="gallery" class="game-gallery">
+            <h2>Galería</h2>
+            <div class="gallery-grid">
+                <img src="Imagenes/Recycle Race/Game play.jpg" alt="Gameplay 1">
+                <img src="Imagenes/Recycle Race/Game win.jpg" alt="Gameplay 2">
+                <img src="Imagenes/Recycle Race/Game over.jpg" alt="Gameplay 3">
+            </div>
+        </section>
+
+        <section id="download" class="game-download">
+            <a href="Games/Recycle Race/Recycle Rice.apk" target="_blank" class="download-button">Descargar Ahora</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Corruptide. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("navLinks");
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
